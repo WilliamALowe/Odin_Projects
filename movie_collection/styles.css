@@ -1,0 +1,65 @@
+body {
+    background-color: #FF9843;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    flex: 1;
+    max-width: 600px;
+    font-size: 2rem;
+    display: flex;
+    margin: 4px auto;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background: #fff;
+    border-radius: 20px;
+    filter: drop-shadow(8px 8px 0px #000);
+    padding: 20px;
+    border: 4px solid #000;
+}
+main {
+    flex: 9;
+    margin: 12px;
+}
+main .card {
+    height: 80%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+.main-content {
+    flex: 9;
+}
+.main-button-container {
+    flex: 1;
+}
+#add-movie-button {
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 20px;
+    filter: drop-shadow(4px 4px 0px #000);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+#add-movie-button:hover {
+    filter: drop-shadow(2px 2px 0px #000);
+    background: #86A7FC;
+}

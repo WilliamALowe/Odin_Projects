@@ -34,5 +34,25 @@
         <main>
         <footer>Created by William Lowe - 2024</footer>
     </div>
+
+    <dialog class="card dialog-card">
+        <form>
+            <label for="movieTitle">Movie Title: </label> <br>
+            <input type="text"name="inputTitle" id="movie-title-input" value=""> <br><br>
+            <label for="movieDirector">Movie Director: </label> <br>
+            <input type="text" id="movie-director-input" value=""> <br><br>
+            <label for="movieDuration">Movie Duration (minutes): </label> <br>
+            <input id="movie-duration-input" type="number" value=""> <br><br>
+            <label for="hasWatched">Watched?: </label> <br>
+            <select name="hasWatched" id="has-watched-input">
+                <option value="true">Watched</option>
+                <option value="false">Not Yet</option>
+            </select> <br><br>
+        </form>
+        <div class="dialog-button-container">
+            <button id="dialog-close-button">Close</button>
+            <button id="dialog-submit-button">Submit</button>
+        </div>
+    </dialog>
 </body>
 </html>

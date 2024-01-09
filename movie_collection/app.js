@@ -12,11 +12,11 @@ function addMovieToLibrary(movie) {
 }
 
 // FUNCTION TESTS
-const testMovie = new Movie('testMovie', 'testDirector', 'testDuration', false);
-const secondTestMovie = new Movie('secondTestMovie', 'secondTestDirector', 'secondTestDuration', true);
+// const testMovie = new Movie('testMovie', 'testDirector', '100', false);
+// const secondTestMovie = new Movie('secondTestMovie', 'secondTestDirector', '90', true);
 
-addMovieToLibrary(testMovie);
-addMovieToLibrary(secondTestMovie);
+// addMovieToLibrary(testMovie);
+// addMovieToLibrary(secondTestMovie);
 // console.log(myLibrary);
 
 const mainContent = document.querySelector(".main-content");
@@ -45,6 +45,8 @@ submitButton.addEventListener("click", () => {
     let inputDuration = durationInput.value;
     let inputHasWatched = hasWatchedInput.value;
 
+    // ToDo: Add Form Validation
+
     const inputMovie = new Movie(inputTitle, inputDirector, inputDuration, inputHasWatched);
     addMovieToLibrary(inputMovie);
 
@@ -69,13 +71,31 @@ function renderCollection() {
 
         let duration = document.createElement('p');
         duration.classList.add('duration-paratag');
-        duration.innerText = element.movieDuration + ' minutes'
+        duration.innerText = 'Duration: ' + element.movieDuration + ' minutes'
+
+        let hasWatched = document.createElement('button');
+        hasWatched.classList.add('watched-status');
+
+        if(element.movieHasWatched) {
+            hasWatched.innerText = 'Watched';
+        } else {
+            hasWatched.innerText = 'Not Yet Watched';
+        }
+
+        function changeWatchStatus() {
+            // ToDo: Add functionality
+        }
+
+        function removeFromLibrary() {
+            // ToDo: Add Functionality
+        }
 
         !element.movieHasWatched ? movieCard.classList.add('not-watched') : movieCard.classList.add('watched');
 
         movieCard.append(title);
         movieCard.append(director);
         movieCard.append(duration);
+        movieCard.append(hasWatched);
         mainContent.append(movieCard);
     });
 }

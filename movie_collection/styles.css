@@ -95,8 +95,8 @@ input, select, option {
 .dialog-button-container button {
     flex: 1;
 }
-.movie-card{
-    background: #86A7FC;
+.movie-card {
+    background: #fff;
     border-radius: 20px;
     filter: drop-shadow(8px 8px 0px #000);
     padding: 20px;
@@ -104,6 +104,23 @@ input, select, option {
     width: 200px;
     height: 200px;
 }
-.not-watched{
+/* .not-watched {
     background: #fff;
+} */
+.movie-header {
+    font-size: 1.4rem;
+    text-align: center;
+}
+.director-paratag, .duration-paratag {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.watched-status {
+    background: #86A7FC;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.watched-status:hover {
+    background: #FF9843;
 }

@@ -1,11 +1,20 @@
 const myLibrary = [];
 
-function Movie(movieTitle, movieDirector, movieDuration, movieHasWatched) {
-    this.movieTitle = movieTitle;
-    this.movieDirector = movieDirector;
-    this.movieDuration = movieDuration;
-    this.movieHasWatched = movieHasWatched;
+class Movie {
+    constructor(movieTitle, movieDirector, movieDuration, movieHasWatched) {
+        this.movieTitle = movieTitle;
+        this.movieDirector = movieDirector;
+        this.movieDuration = movieDuration;
+        this.movieHasWatched = movieHasWatched;
+    }
 }
+
+// function Movie(movieTitle, movieDirector, movieDuration, movieHasWatched) {
+//     this.movieTitle = movieTitle;
+//     this.movieDirector = movieDirector;
+//     this.movieDuration = movieDuration;
+//     this.movieHasWatched = movieHasWatched;
+// }
 
 function addMovieToLibrary(movie) {
     myLibrary.push(movie);

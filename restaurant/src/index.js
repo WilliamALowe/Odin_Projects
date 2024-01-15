@@ -1,8 +1,8 @@
 import './styles/reset.css';
 import './styles/general.css'
 
-import createHeader from './pages/header';
-import createMain from './pages/main';
+import createNavbar from './pages/navbar';
+import createHome from './pages/home';
 
 console.log('dev environment is working... test');
 
@@ -16,8 +16,6 @@ console.log('dev environment is working... test');
 // const content = document.querySelector('#content');
 // content.append(component());
  const content = document.querySelector('#content');
- const header = createHeader();
- const main = createMain();
+ const navbar = createNavbar();
 
- content.appendChild(header);
- content.appendChild(main);
+ content.appendChild(navbar);

@@ -1,0 +1,33 @@
+#homepage-container {
+    height: calc(90vh - 100px);
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.upper-right, .lower-left {
+    padding: 10px;
+    border: 4px solid var(--primary);
+    background: #fff;
+    filter: drop-shadow(8px 8px 0px var(--primary));
+    border-radius: 20px;
+}
+.food-image {
+    height: 200px;
+    width: auto;
+}
+.upper-left, .lower-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3 {
+    font-size: 1.4rem;
+    color: var(--secondary);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+p {
+    font-size: 1.2rem;
+}
+

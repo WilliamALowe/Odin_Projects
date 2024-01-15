@@ -17,5 +17,7 @@ console.log('dev environment is working... test');
 // content.append(component());
  const content = document.querySelector('#content');
  const navbar = createNavbar();
+ const home = createHome();
 
  content.appendChild(navbar);
+ content.appendChild(home);

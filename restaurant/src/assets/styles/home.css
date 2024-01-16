@@ -1,0 +1,42 @@
+#home-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+#home-container>div{
+    border: 2px solid black;
+    margin: 20px;
+    filter: drop-shadow(12px 12px 0px black);
+    border-radius: 20px;
+    padding: 10px;
+}
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+.left {
+    grid-area: 1 / 1 / 2 / 3;
+    background: var(--secondary);
+}
+.middle {
+    grid-area: 2 / 2 / 3 / 4;
+    background: var(--primary);
+}
+img {
+    height: 200px;
+    margin: auto auto;
+}
+.right {
+    grid-area: 3 / 3 / 4 / 5;
+    background: var(--accent);
+}
+.burger-image {
+    grid-area: 1 / 4 / 3 / 5;
+}
+.drinks-image {
+    grid-area: 2 / 1 / 4 / 2;
+}

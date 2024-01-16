@@ -1,0 +1,16 @@
+:root {
+    --background: #FFEAA7;
+    --primary: #DCFFB7;
+    --secondary: #FF6868;
+    --accent: #FFBB64;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: var(--background);
+    font-size: 1rem;
+}
+#content {
+    width: 100vw;
+    height: 100vh;
+}

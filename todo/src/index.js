@@ -1,13 +1,11 @@
-import './assets/styles/reset.css';
+import loadNavbar from './assets/components/navbar';
+import loadMain from './assets/components/main';
 
-function component() {
-    const element = document.createElement('div');
- 
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-   element.classList.add('hello');
- 
-    return element;
-  }
- 
-  document.body.appendChild(component());
+import './assets/styles/reset.css';
+import './assets/styles/general.css';
+import './assets/styles/navbar.css';
+import './assets/styles/main.css';
+
+console.log('Dev env is running...');
+loadNavbar();
+loadMain();

@@ -1,3 +1,61 @@
-nav {
-    flex: 1;
+.navbar {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 200px 100px 200px;
+    gap: 20px;
+}
+.main-content {
+    background-color: white;
+    margin:10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+}
+.profile-pic {
+    height: 80%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.name-container {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.links-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.link-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.link-icon>img {
+    height: 1.4rem;
+    color: #fff;
+    filter: invert(100%) sepia(1%) saturate(7469%) hue-rotate(285deg) brightness(117%) contrast(98%);
+}
+.link-title {
+    text-align: center;
+    font-size: 1.2rem;
+    transition: 0.2s ease-in-out;
+}
+.link-item:hover {
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+}
+.link-item:hover .link-title{
+    font-size: 1.4rem;
 }

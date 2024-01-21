@@ -2,11 +2,11 @@ body {
     height: 100vh;
     width: 100vw;
     font-size: 1rem;
+    background-color: #112D4E;
+    font-family: 'Ubuntu', sans-serif;
 }
 #content {
-    display: flex;
-    flex-direction: column;
     height: 100%;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
-
